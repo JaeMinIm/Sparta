@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <!-- 첫 번째 LinearLayout (이미지 부분) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="244dp">
+
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="main1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main1"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+
+    <!-- 두 번째 LinearLayout (입력 부분) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        >
+        <!-- 이름 입력 -->
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="16dp"
+            android:text="이름"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <!-- 아이디 입력 -->
+        <EditText
+            android:id="@+id/signupname"
+            android:layout_width="380dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="22dp"
+            android:hint="이름을 입력하시오." />
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="380dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="16dp"
+            android:text="아이디"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/signupid"
+            android:layout_width="380dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="22dp"
+            android:hint="아이디를 입력하시오."
+            />
+
+        <!-- 비밀번호 입력 -->
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="380dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="16dp"
+            android:text="비밀번호"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/signupwd"
+            android:layout_width="380dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="22dp"
+            android:hint="비밀번호를 입력하시오."
+            android:inputType="textPassword"
+            />
+
+    </LinearLayout>
+
+    <!-- 세 번째 LinearLayout (버튼 부분) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/signup_bt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>
